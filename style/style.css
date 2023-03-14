@@ -1,3 +1,150 @@
-#test {
-  color: red;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#topMenu {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.5rem;
+}
+
+#logo {
+  height: 3.5rem;
+  width: 85%;
+}
+
+#menu {
+  width: 100%;
+  position: absolute;
+  list-style: none;
+  top: 5rem;
+  display: none;
+}
+
+#menuButton {
+  height: 31px;
+  width: 27px;
+  padding: 0.2rem;
+}
+
+.menuItems {
+  text-align: center;
+  padding: 1rem;
+}
+
+#home {
+  background-image: url(../assets/mainMobileBack.svg);
+  background-size: 100%;
+  height: 30.5rem;
+}
+
+#home h2 {
+  font-size: 1.5rem;
+  padding-top: 6.3rem;
+  margin: auto;
+  width: 93%;
+	font-weight: 700;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: url('../assets/h1Back.jpg');
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: auto;
+  padding-bottom: 0.3rem;
+  width: 93%;
+	font-weight: 700;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: url('../assets/h1Back.jpg');
+}
+
+.brief {
+  position: relative;
+  margin: auto;
+  width: 95%;
+  border: solid 0.2rem white;
+  padding: 1rem;
+  z-index: 2;
+  background-color: #f8f8f8;
+}
+
+.date {
+  font-size: 1.5rem;
+  color: #3b3e45;
+  font-weight: bold;
+  position: relative;
+  margin: auto;
+  width: 95%;
+  padding: 1rem 1rem 0.1rem 1rem;
+  z-index: 2;
+  background-color: #f8f8f8;
+}
+
+.place {
+  font-size: 1.3rem;
+  color: #716a6a;
+  font-weight: bold;
+  position: relative;
+  margin: auto;
+  width: 95%;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+  z-index: 2;
+  background-color: #f8f8f8;
+}
+
+#mainProgram {
+  background-image: url(../assets/programBack.svg);
+  background-size: 100%;
+  height: 41.4rem;
+}
+
+#mainProgram h3 {
+  padding: 1.8rem 2rem 0.7rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+#mainProgram hr {
+  margin: auto;
+  width: 10%;
+}
+
+.programCard {
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  align-items: center;
+  background-color: rgba(59, 62, 69, 0.5);
+  z-index: 2;
+}
+
+.programActivity {
+  color: #ff5438;
+  padding: 0.1rem 0.1rem 0.1rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.programBrief {
+  color: white;
+  font-size: 0.7rem;
+  line-height: 1.4rem;
+}
+
+.join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 4.25rem;
+  margin: 2.5rem 2.345rem 2.5rem 2.345rem;
+  background-color: #ff4f38;
+  color: white;
 }
