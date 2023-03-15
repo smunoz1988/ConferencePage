@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
 #topMenu {
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 0.5rem;
 }
 
@@ -39,6 +45,7 @@
   background-image: url(../assets/mainMobileBack.svg);
   background-size: 100%;
   height: 30.5rem;
+  transform: translateY(4rem);
 }
 
 #home h2 {
@@ -46,11 +53,11 @@
   padding-top: 6.3rem;
   margin: auto;
   width: 93%;
-	font-weight: 700;
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-	background-image: url('../assets/h1Back.jpg');
+  font-weight: 700;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url('../assets/h1Back.jpg');
 }
 
 h1 {
@@ -58,11 +65,11 @@ h1 {
   margin: auto;
   padding-bottom: 0.3rem;
   width: 93%;
-	font-weight: 700;
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-	background-image: url('../assets/h1Back.jpg');
+  font-weight: 700;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url('../assets/h1Back.jpg');
 }
 
 .brief {
@@ -103,6 +110,7 @@ h1 {
   background-image: url(../assets/programBack.svg);
   background-size: 100%;
   height: 41.4rem;
+  transform: translateY(4rem);
 }
 
 #mainProgram h3 {
@@ -117,7 +125,8 @@ h1 {
 }
 
 .programCard {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin: 0.5rem;
   padding: 0.5rem;
   align-items: center;
@@ -125,15 +134,21 @@ h1 {
   z-index: 2;
 }
 
+.programImage {
+  grid-column: 1;
+}
+
 .programActivity {
+  grid-column: 2;
   color: #ff5438;
-  padding: 0.1rem 0.1rem 0.1rem 1rem;
   font-size: 1rem;
   font-weight: bold;
 }
 
 .programBrief {
+  grid-column: 3/6;
   color: white;
+  padding-left: 0.5rem;
   font-size: 0.7rem;
   line-height: 1.4rem;
 }
@@ -147,4 +162,79 @@ h1 {
   margin: 2.5rem 2.345rem 2.5rem 2.345rem;
   background-color: #ff4f38;
   color: white;
+}
+
+#speakers {
+  transform: translateY(4rem);
+}
+
+#speakers h3 {
+  padding: 1.8rem 2rem 0.7rem 2rem;
+  text-align: center;
+}
+
+.speakerCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5%;
+}
+
+.speakerImage {
+  grid-column: 1;
+  width: 100%;
+  height: auto;
+}
+
+.speakerInfo {
+  grid-column: 2/5;
+  padding: 0.5rem;
+}
+
+.speakerInfo h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+}
+
+.speakerPosition {
+  color: #f78c89;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+}
+
+.speakerBrief {
+  font-size: 0.57rem;
+  font-weight: bold;
+  padding-top: 0.3rem;
+}
+
+.moreContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.moreSpeakerBtn {
+  font-size: 0.69rem;
+  font-weight: bold;
+  width: 90%;
+  border: solid 0.1rem #dcdcdc;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  background-color: white;
+}
+
+.moreBtnArrow {
+  padding-bottom: 0.1rem;
+  padding-left: 0.7rem;
+}
+
+.lessBtnArrow {
+  padding-bottom: 0.1rem;
+  padding-right: 0.7rem;
+  transform: rotate(-0.5turn);
+}
+
+#moreSpeakersContainer {
+  display: none;
 }
