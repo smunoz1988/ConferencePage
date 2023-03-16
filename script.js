@@ -1,9 +1,16 @@
 //  Mobile Menu
 
 const menuButton = document.querySelector('#menuButton');
+const closeMenuButton = document.querySelector('#closeMenuBtn');
 
 menuButton.addEventListener('click', () => {
   document.getElementById('menu').style.display = 'block';
+  document.getElementById('blurSection').style.filter = 'blur(5px)';
+});
+
+closeMenuButton.addEventListener('click', () => {
+  document.getElementById('menu').style.display = 'none';
+  document.getElementById('blurSection').style.filter = 'none';
 });
 
 //  Program cards data
@@ -49,7 +56,7 @@ for (let i = 0; i < program.length; i += 1) {
   </div>
   `;
   cardContainer.innerHTML += programCard;
-};
+}
 
 // Speakers Info
 
@@ -96,7 +103,7 @@ const speakers = [
     position: 'N.Y Firemen Security Chief',
     brief: 'Aliquam vel porta sapien, sit amet vestibulum nisl. Aliquam vel porta sapien, sit amet vestibulum nisl.',
   },
-]
+];
 
 // Speakers Section Card Creator
 
@@ -120,8 +127,7 @@ for (let i = 0; i < speakers.length; i += 1) {
   } else {
     moreSpeakersContainer.innerHTML += speakerCard;
   }
-  
-};
+}
 
 // More speakers mobile section
 
@@ -131,9 +137,9 @@ moreSpeakerBtn.addEventListener('click', () => {
   const x = document.getElementById('moreSpeakersContainer');
   if (x.style.display === 'block') {
     x.style.display = 'none';
-    moreSpeakerBtn.innerHTML = 'MORE <img src="assets/arrowMore.svg" alt="arrow" class="moreBtnArrow">'
+    moreSpeakerBtn.innerHTML = 'MORE <img src="assets/arrowMore.svg" alt="arrow" class="moreBtnArrow">';
   } else {
-    x.style.display = 'block'
-    moreSpeakerBtn.innerHTML = 'LESS  <img src="assets/arrowMore.svg" alt="arrow" class="lessBtnArrow">'
+    x.style.display = 'block';
+    moreSpeakerBtn.innerHTML = 'LESS  <img src="assets/arrowMore.svg" alt="arrow" class="lessBtnArrow">';
   }
 });

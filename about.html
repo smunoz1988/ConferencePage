@@ -8,12 +8,13 @@
     <title>About Firemen Meeting</title>
 </head>
 <body>
-  <header>
 
+  <header>
     <div id="topMenu">
       <img id="menuButton" src="assets/hambMenu.png">
-      <img id="logo" src="assets/logo.svg">
+      <a class="logoAbout" href="./index.html"><img id="logo" src="assets/logo.svg"></a>
       <ul id="menu">
+        <li id="closeMenuBtn"><a class="closebtn close_menu">&times;</a></li>
         <li class="menuItems"><a href="./about.html">About</a></li>
         <li class="menuItems"><a href="#program">Program</a></li>
         <li class="menuItems"><a href="#join">Join</a></li>
@@ -24,37 +25,58 @@
     </div>
   </header>
 
-  <section id="home">
-    <h3>"Hello! Firefighters!"</h3>
-    <h1>FIREMEN MEETING GLOBAL SUMMIT 2023</h1>
-    <p class="eventBrief">Nec ornare massa luctus quis. Sed eget pharetra mauris. Suspendisse sed dictum ipsum, at condimentum augue. Aenean vitae elementum ex. Suspendisse suscipit magna ac nisi viverra convallis.</p>
-    <div class="contactInfo">
-      <p class="eventContact">Please contact us per Email for nay further questions about FM Global Summit 2023!</p>
-      <p class="contactMail">fire@fireacademmy.com</p>
-    </div>
-  </section>
+  <section id="blurSection">
 
-  <section class="logoSection">
-    <h2>Firemen Meeting<br>Global Summit 2023 Logo</h2>
-    <img src="assets/about/logoSectionLine.svg" alt="line">
-    <p>The logo of CC Global Summit 2015 was decided through the logo competition from 8, June to 7, July.</p>
-    <img src="assets/logo.svg" alt="course logo">
-  </section>
+    <section id="home">
+      <h3>"Hello! Firefighters!"</h3>
+      <h1>FIREMEN MEETING GLOBAL SUMMIT 2023</h1>
+      <p class="eventBrief">Nec ornare massa luctus quis. Sed eget pharetra mauris. Suspendisse sed dictum ipsum, at condimentum augue. Aenean vitae elementum ex. Suspendisse suscipit magna ac nisi viverra convallis.</p>
+      <div class="contactInfo">
+        <p class="eventContact">Please contact us per Email for nay further questions about FM Global Summit 2023!</p>
+        <p class="contactMail">fire@fireacademmy.com</p>
+      </div>
+    </section>
 
-  <section class="pastEvents">
-    <h2>Past Firemen Meetings</h2>
-    <img src="assets/about/logoSectionLine.svg" alt="line">
-    <p>Take a look at the past two CC Global Summits which took place in Buenos Aires and in Warsaw</p>
-    <div>
-      <img src="assets/about/pastEvent.svg" alt="past events">
-      <img src="assets/about/pastEvent.svg" alt="past events">
-    </div>
-  </section>
+    <section class="logoSection">
+      <h2>Firemen Meeting<br>Global Summit 2023 Logo</h2>
+      <img src="assets/about/logoSectionLine.svg" alt="line">
+      <p>The logo of CC Global Summit 2015 was decided through the logo competition from 8, June to 7, July.</p>
+      <div class="aboutLogoContainer">
+        <img class="aboutLogo" src="assets/logo.svg" alt="course logo">
+      </div>
+    </section>
 
-  <section class="partner">
-    <h2>Partner</h2>
-    <img src="assets/about/logoSectionLine.svg" alt="line">
+    <section class="pastEvents">
+      <h2>Past Firemen Meetings</h2>
+      <img src="assets/about/logoSectionLine.svg" alt="line">
+      <p>Take a look at the past two CC Global Summits which took place in Buenos Aires and in Warsaw</p>
+      <div>
+        <img src="assets/about/pastEvent.svg" alt="past events">
+        <img src="assets/about/pastEvent.svg" alt="past events">
+      </div>
+    </section>
+
+    <section class="partner">
+      <h2>Partner</h2>
+      <img src="assets/about/logoSectionLine.svg" alt="line">
+      <div class="partnerContainer">
+        <img class="partnerLogo" src="assets/about/partner1.png">
+        <img class="partnerLogo" src="assets/about/partner2.png">
+        <img class="partnerLogo" src="assets/about/partner3.png">
+        <img class="partnerLogo" src="assets/about/partner4.svg">
+        <img class="partnerLogo" src="assets/about/partner5.svg">
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <img class="ccFooter" src="assets/about/ccFooter.svg">
+        <p class="ccText">Firemen Meeting<br>Ecuador</p>
+      </div>
+      <p class="rightsCourse">2023 Fireman Meeting, Ecuador<br>Some Rights Reserved</p>
+    </footer>
   </section>
   
+  <script src="script.js"></script>
 </body>
 </html>
