@@ -69,7 +69,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- You can visit this site on https://smunoz1988.github.io/Portfolio-mobile-first/
+- You can visit this site on https://smunoz1988.github.io/ConferencePage/index.html
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,6 +126,7 @@ Web design by:
 👤 Cindy Shin.
 
 - Behance: https://www.behance.net/adagio07
+- Original Design: https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
