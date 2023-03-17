@@ -12,6 +12,10 @@ header {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.6);
 }
 
+nav {
+  display: none;
+}
+
 #topMenu {
   display: flex;
   align-items: center;
@@ -23,6 +27,7 @@ header {
   width: 100%;
   align-items: center;
   justify-content: center;
+  padding-left: 0.5rem;
 }
 
 #logo {
@@ -69,7 +74,6 @@ header {
 #home {
   background-image: url(../assets/mainMobileBack.svg);
   background-size: 100%;
-  height: 30.5rem;
   transform: translateY(4rem);
 }
 
@@ -124,7 +128,7 @@ h1 {
   position: relative;
   margin: auto;
   width: 95%;
-  padding: 0.1rem 1rem 0.1rem 1rem;
+  padding: 0.1rem 1rem 2rem 1rem;
   z-index: 2;
   background-color: #f8f8f8;
 }
@@ -132,7 +136,6 @@ h1 {
 #mainProgram {
   background-image: url(../assets/programBack.svg);
   background-size: 100%;
-  height: 48rem;
   transform: translateY(4rem);
 }
 
@@ -176,6 +179,10 @@ h1 {
   line-height: 1.4rem;
 }
 
+.joinBtnHolder {
+  padding-bottom: 1rem;
+}
+
 .join {
   display: flex;
   justify-content: center;
@@ -194,6 +201,11 @@ h1 {
 #speakers h3 {
   padding: 1.8rem 2rem 0.7rem 2rem;
   text-align: center;
+}
+
+.speakersLine {
+  width: 5%;
+  margin: auto;
 }
 
 .speakerCard {
@@ -247,6 +259,10 @@ h1 {
   background-color: white;
 }
 
+.speakerNameSeparator {
+  width: 10%;
+}
+
 .moreBtnArrow {
   padding-bottom: 0.1rem;
   padding-left: 0.7rem;
@@ -260,9 +276,10 @@ h1 {
 
 #moreSpeakersContainer {
   display: none;
+  flex-wrap: wrap;
 }
 
-.partner {
+#partner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,4 +335,216 @@ footer div p {
 .rightsCourse {
   font-size: 0.75rem;
   padding-left: 1rem;
+}
+
+/* Minimum desktop screen size should be 768px. this will be changed in the next summits when i make the deskopt. */
+@media screen and (min-width: 768px) {
+  #menuButton {
+    display: none;
+  }
+
+  #blurSection {
+    background-color: #f8f8f8;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navItems {
+    text-decoration: none;
+    padding: 1rem;
+    margin-left: 1rem;
+    color: #716a6a;
+    font-weight: bold;
+  }
+
+  .navItems:hover {
+    background-color: #ff4f38;
+    color: white;
+  }
+
+  .navAbout {
+    color: #ff4f38;
+  }
+
+  .campaign {
+    border: solid 0.3rem red;
+    padding: 0.5rem;
+    margin-left: 3rem;
+  }
+
+  .logoHeader {
+    width: 40%;
+  }
+
+  #home {
+    background-image: url(../assets/mainDesktopBack.svg);
+  }
+
+  #home h2 {
+    font-size: 2.5rem;
+    padding-top: 6.3rem;
+    margin: auto;
+    width: 62%;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 3.9rem;
+    margin: auto;
+    padding-bottom: 0.3rem;
+    width: 62%;
+    font-weight: 700;
+  }
+
+  .brief {
+    width: 62%;
+    font-size: 1.2rem;
+    border: solid 0.6rem white;
+  }
+
+  .date {
+    width: 62%;
+  }
+
+  .place {
+    width: 62%;
+  }
+
+  #mainProgram {
+    transform: translateY(4.5rem);
+  }
+
+  #mainProgram hr {
+    margin: auto;
+    width: 3%;
+  }
+
+  #programContainer {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .programCard {
+    display: flex;
+    flex-direction: column;
+    margin: 0.1rem;
+  }
+
+  .programCard:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .programImage {
+    margin-bottom: 1rem;
+  }
+
+  .programActivity {
+    padding-bottom: 1rem;
+  }
+
+  .programBrief {
+    grid-column: 3/6;
+    color: white;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+  }
+
+  .join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 4.25rem;
+    margin: auto;
+    background-color: rgba(59, 62, 69, 0.5);
+    color: white;
+    cursor: pointer;
+  }
+
+  .join:hover {
+    transform: scale(1.5);
+  }
+
+  #speakers {
+    transform: translateY(4.5rem);
+  }
+
+  .speakersLine {
+    width: 5%;
+    margin: auto;
+  }
+
+  #moreSpeakersContainer {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+  }
+
+  #speakersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    padding-top: 1.5rem;
+  }
+
+  .speakerCard {
+    width: 50%;
+    margin: auto;
+    padding: 1%;
+  }
+
+  .speakerCard:hover {
+    transform: scale(1.2);
+  }
+
+  .speakerInfo h5 {
+    font-size: 1.2rem;
+  }
+
+  .speakerPosition {
+    font-size: 0.9rem;
+  }
+
+  .speakerBrief {
+    font-size: 0.75rem;
+  }
+
+  .moreSpeakerBtn {
+    display: none;
+  }
+
+  #partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #414246;
+    transform: translateY(7rem);
+  }
+
+  footer {
+    display: flex;
+    transform: translateY(7rem);
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partnerLogo {
+    width: 7rem;
+    height: auto;
+    margin: 0.1rem 2rem 0.5rem 2rem;
+  }
 }

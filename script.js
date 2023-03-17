@@ -24,7 +24,7 @@ const program = [
   {
     image: 'assets/programIcon2.svg',
     activity: 'Exhibition',
-    brief: 'Mauris non urna non neque imperdiet un mattis. Cras maximus pulvinar sagittis. Morbi euismod luctus ex quis porta.',
+    brief: 'Cras maximus pulvinar sagittis. Morbi euismod luctus ex quis porta. Mauris non urna non neque imperdiet un mattis. ',
   },
   {
     image: 'assets/programIcon3.svg',
@@ -34,12 +34,12 @@ const program = [
   {
     image: 'assets/programIcon4.svg',
     activity: 'Workshop',
-    brief: 'Mauris non urna non neque imperdiet un mattis. Cras maximus pulvinar sagittis. Morbi euismod luctus ex quis porta.',
+    brief: 'Pras maximus pulvinar sagittis. Morbi euismod luctus ex quis porta. Mauris non urna non neque imperdiet un mattis.',
   },
   {
     image: 'assets/programIcon5.svg',
     activity: 'Test',
-    brief: 'Mauris non urna non neque imperdiet un mattis. Cras maximus pulvinar sagittis. Morbi euismod luctus ex quis porta.',
+    brief: 'Morbi euismod luctus ex quis porta. Mauris non urna non neque imperdiet un mattis. Cras maximus pulvinar sagittis.',
   },
 ];
 
@@ -66,42 +66,42 @@ const speakers = [
     image: 'assets/speaker6.svg',
     name: 'Juan Perez',
     position: 'N.Y Firemen Security Chief',
-    brief: 'Aliquam vel porta sapien, sit amet vestibulum nisl. Aliquam vel porta sapien, sit amet vestibulum nisl.',
+    brief: 'Instructor for 20 years at the Industrial Fire School at The Ansul Fire Technology Center - Instructor at the Viña del Mar Naval Engineering School - Instructor at Texas A&M University.',
   },
   {
     class: 'speakerCard',
     image: 'assets/speaker5.svg',
     name: 'Margareth Jones',
-    position: 'N.Y Firemen Security Chief',
-    brief: 'Aliquam vel porta sapien, sit amet vestibulum nisl. Aliquam vel porta sapien, sit amet vestibulum nisl.',
+    position: 'Samper Security Adm',
+    brief: 'Extensive knowledge in fire fighting systems based on foam, chemical powders and clean agents.',
   },
   {
     class: 'speakerCard',
     image: 'assets/speaker4.svg',
     name: 'Chio Ming',
-    position: 'N.Y Firemen Security Chief',
-    brief: 'Aliquam vel porta sapien, sit amet vestibulum nisl. Aliquam vel porta sapien, sit amet vestibulum nisl.',
+    position: 'National Security Advisor',
+    brief: 'Universidad Federico Santa María, Valparaíso, Chile - Regional Sales Manager for Tyco Fire Protection Products',
   },
   {
     class: 'speakerCard',
     image: 'assets/speaker3.svg',
     name: 'Ameed Dassum',
-    position: 'N.Y Firemen Security Chief',
-    brief: 'Aliquam vel porta sapien, sit amet vestibulum nisl. Aliquam vel porta sapien, sit amet vestibulum nisl.',
+    position: 'C.O.E. Fire Section',
+    brief: 'We use AI to recreate real risk situations',
   },
   {
     class: 'speakerCard',
     image: 'assets/speaker2.svg',
     name: 'Sarah Glass',
-    position: 'N.Y Firemen Security Chief',
-    brief: 'Aliquam vel porta sapien, sit amet vestibulum nisl. Aliquam vel porta sapien, sit amet vestibulum nisl.',
+    position: 'R.M of Task Force Tips Inc.',
+    brief: 'The profession of the Firefighter demands effort and sacrifice, exceeding our limits and, above all, facing complicated environments.',
   },
   {
     class: 'speakerCard',
     image: 'assets/speaker1.svg',
     name: 'Frank Williams',
-    position: 'N.Y Firemen Security Chief',
-    brief: 'Aliquam vel porta sapien, sit amet vestibulum nisl. Aliquam vel porta sapien, sit amet vestibulum nisl.',
+    position: 'Specialist in Rescues in Confined and/or Contaminated Spaces',
+    brief: 'We are present at strategic points in the Metropolitan District of Quito to always take care of you.',
   },
 ];
 
@@ -117,7 +117,7 @@ for (let i = 0; i < speakers.length; i += 1) {
     <div class="speakerInfo">
       <h5>${speakers[i].name}</h5>
       <p class="speakerPosition">${speakers[i].position}</p>
-      <hr>
+      <hr class="speakerNameSeparator">
       <p class="speakerBrief">${speakers[i].brief}</p>
     </div>
   </div>
@@ -135,11 +135,11 @@ const moreSpeakerBtn = document.querySelector('.moreSpeakerBtn');
 
 moreSpeakerBtn.addEventListener('click', () => {
   const x = document.getElementById('moreSpeakersContainer');
-  if (x.style.display === 'block') {
+  if (x.style.display === 'flex') {
     x.style.display = 'none';
     moreSpeakerBtn.innerHTML = 'MORE <img src="assets/arrowMore.svg" alt="arrow" class="moreBtnArrow">';
   } else {
-    x.style.display = 'block';
+    x.style.display = 'flex';
     moreSpeakerBtn.innerHTML = 'LESS  <img src="assets/arrowMore.svg" alt="arrow" class="lessBtnArrow">';
   }
 });
