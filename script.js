@@ -23,7 +23,7 @@ const program = [
   },
   {
     image: 'assets/programIcon2.svg',
-    activity: 'Exhibition',
+    activity: 'Expo',
     brief: 'Cras maximus pulvinar sagittis. Morbi euismod luctus ex quis porta. Mauris non urna non neque imperdiet un mattis. ',
   },
   {
@@ -33,7 +33,7 @@ const program = [
   },
   {
     image: 'assets/programIcon4.svg',
-    activity: 'Workshop',
+    activity: 'Work',
     brief: 'Pras maximus pulvinar sagittis. Morbi euismod luctus ex quis porta. Mauris non urna non neque imperdiet un mattis.',
   },
   {

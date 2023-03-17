@@ -13,7 +13,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 3;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.6);
 }
 
 nav {
@@ -81,7 +80,7 @@ nav {
   transform: translateY(4rem);
 }
 
-#home h2 {
+.introTitle {
   font-size: 1.5rem;
   padding-top: 6.3rem;
   margin: auto;
@@ -97,7 +96,7 @@ h1 {
   margin: auto;
   padding-bottom: 0.3rem;
   width: 93%;
-  font-weight: 700;
+  font-weight: 900;
   -webkit-background-clip: text;
   color: transparent;
   background-image: url('../assets/h1Back.jpg');
@@ -178,7 +177,7 @@ h1 {
 .programBrief {
   grid-column: 3/6;
   color: white;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   font-size: 0.7rem;
   line-height: 1.4rem;
 }
@@ -349,6 +348,11 @@ footer div p {
 
   #blurSection {
     background-color: #f8f8f8;
+    filter: none !important;
+  }
+
+  #menu {
+    display: none !important;
   }
 
   .logBar {
@@ -409,7 +413,7 @@ footer div p {
     background-image: url(../assets/mainDesktopBack.svg);
   }
 
-  #home h2 {
+  .introTitle {
     font-size: 2.5rem;
     padding-top: 6.3rem;
     margin: auto;
@@ -422,7 +426,7 @@ footer div p {
     margin: auto;
     padding-bottom: 0.3rem;
     width: 62%;
-    font-weight: 700;
+    font-weight: 900;
   }
 
   .brief {
@@ -561,16 +565,21 @@ footer div p {
   }
 
   footer {
-    display: flex;
     transform: translateY(7rem);
-    padding: 1rem;
-    align-items: center;
-    justify-content: center;
   }
 
   .partnerLogo {
     width: 7rem;
     height: auto;
     margin: 0.1rem 2rem 0.5rem 2rem;
+  }
+
+  .ccText {
+    font-size: 1.3rem;
+  }
+
+  .rightsCourse {
+    font-size: 0.85rem;
+    padding-left: 6rem;
   }
 }

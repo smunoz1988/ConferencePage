@@ -13,7 +13,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 3;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.6);
 }
 
 nav {
@@ -94,7 +93,7 @@ nav {
   color: #ff4f38;
 }
 
-#home h3 {
+.introTitle {
   font-size: 1.5rem;
   padding-top: 0.5rem;
   -webkit-background-clip: text;
@@ -112,6 +111,7 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
   background-image: url('../assets/h1Back.jpg');
+  font-weight: 900;
 }
 
 .eventBrief {
@@ -291,6 +291,14 @@ footer div {
     display: none;
   }
 
+  #blurSection {
+    filter: none !important;
+  }
+
+  #menu {
+    display: none !important;
+  }
+
   .logBar {
     display: flex;
     background-color: #3e3e3e;
@@ -349,7 +357,7 @@ footer div {
     background-image: url(../assets/about/Hero.svg);
   }
 
-  #home h3 {
+  .introTitle {
     display: none;
   }
 
@@ -359,7 +367,7 @@ footer div {
     padding-top: 3.5rem;
     padding-bottom: 0.3rem;
     width: 62%;
-    font-weight: 700;
+    font-weight: 900;
   }
 
   #home img {
@@ -436,5 +444,14 @@ footer div {
     width: 7rem;
     height: auto;
     margin: 0.1rem 2rem 0.5rem 2rem;
+  }
+
+  .ccText {
+    font-size: 1.3rem;
+  }
+
+  .rightsCourse {
+    font-size: 0.85rem;
+    padding-left: 5rem;
   }
 }
