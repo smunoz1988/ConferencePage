@@ -2,6 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.logBar {
+  display: none;
 }
 
 header {
@@ -103,7 +108,7 @@ nav {
 
 h1 {
   font-size: 2.2rem;
-  padding-top: 0.5rem;
+  padding: 0.5rem 1rem 1rem 1rem;
   -webkit-background-clip: text;
   color: transparent;
   background-image: url('../assets/h1Back.jpg');
@@ -128,6 +133,7 @@ h1 {
 
 .eventContact {
   color: #7a7a7a;
+  padding-top: 1rem;
 }
 
 .contactMail {
@@ -191,15 +197,33 @@ h1 {
   padding-bottom: 1rem;
 }
 
-.pastEvents p {
-  font-size: 0.75rem;
-  font-weight: bold;
-  padding: 1.5rem;
-  color: #838383;
+.imageOverlay {
+  margin: 1rem;
+  width: 20.87rem;
+  height: 11.45rem;
+  background-image: url('../assets/about/pastEvent.jpeg');
+  background-size: 20.87rem 11.45rem;
+}
+
+.imageOverlay2 {
+  margin: 1rem;
+  width: 20.87rem;
+  height: 11.45rem;
+  background-image: url('../assets/about/pastEvent2.jpg');
+  background-size: 20.87rem 11.45rem;
 }
 
 .pastEventImage {
+  display: flex;
   padding: 0.5rem;
+  width: 20.87rem;
+  height: 11.45rem;
+  background-color: rgba(239, 11, 11, 0.6);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .partner {
@@ -265,6 +289,28 @@ footer div {
 @media screen and (min-width: 768px) {
   #menuButton {
     display: none;
+  }
+
+  .logBar {
+    display: flex;
+    background-color: #3e3e3e;
+    color: white;
+    font-size: small;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+    padding-right: 17.5%;
+  }
+
+  .logBarImage {
+    height: 0.8rem;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .logBarItem {
+    padding-left: 2rem;
+    cursor: pointer;
   }
 
   nav {
@@ -337,10 +383,6 @@ footer div {
     margin: auto;
   }
 
-  .eventContact {
-    font-size: 1rem;
-  }
-
   .contactMail {
     font-size: 1rem;
     padding-bottom: 2rem;
@@ -361,16 +403,33 @@ footer div {
     font-size: 1.5rem;
   }
 
-  .pastEvents p {
+  .eventContact {
     font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .pastEventImgContainer {
+    display: flex;
+    margin: 1.5rem;
+  }
+
+  .imageOverlay,
+  .imageOverlay2 {
+    width: 27.87rem;
+    height: 14.75rem;
+    background-size: 27.87rem 14.75rem;
   }
 
   .pastEventImage {
-    margin-bottom: 2rem;
+    padding: 0.5rem;
+    width: 27.87rem;
+    height: 14.75rem;
+    font-size: 2rem;
   }
 
   .pastEventImage:hover {
     transform: scale(1.2);
+    background-color: rgba(239, 11, 11, 0.01);
   }
 
   .partnerLogo {

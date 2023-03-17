@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="style/about.css"/>
     <title>About Firemen Meeting</title>
 </head>
 <body>
 
   <header>
+    <ul class="logBar">
+      <il class="logBarItem"><img class="logBarImage" src="assets/about/facebook.svg"></il>
+      <il class="logBarItem"><img class="logBarImage" src="assets/about/twitter.svg"></il>
+      <il class="logBarItem">English</il>
+      <il class="logBarItem">My Page</il>
+      <il class="logBarItem">Logout</il>
+    </ul>
     <div id="topMenu">
       <img id="menuButton" src="assets/hambMenu.png">
       <a class="logoHeader" href="./index.html"><img id="logo" src="assets/logo.svg"></a>
@@ -60,10 +70,14 @@
     <section class="pastEvents">
       <h2>Past Firemen Meetings</h2>
       <img src="assets/about/logoSectionLine.svg" alt="line">
-      <p>Take a look at the past two CC Global Summits which took place in Buenos Aires and in Warsaw</p>
-      <div>
-        <img class="pastEventImage" src="assets/about/pastEvent.svg" alt="past events">
-        <img class="pastEventImage" src="assets/about/pastEvent.svg" alt="past events">
+      <p class="eventContact">Take a look at the past two CC Global Summits which took place in Buenos Aires and in Warsaw</p>
+      <div class="pastEventImgContainer">
+        <div class="imageOverlay">
+          <p class="pastEventImage">F.M. Barcelona <br>2022</p>
+        </div>
+        <div class="imageOverlay2">
+          <p class="pastEventImage">F.M. Bagdag <br>2021</p>
+        </div>
       </div>
     </section>
 

@@ -5,6 +5,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+.logBar {
+  display: none;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -345,6 +349,28 @@ footer div p {
 
   #blurSection {
     background-color: #f8f8f8;
+  }
+
+  .logBar {
+    display: flex;
+    background-color: #3e3e3e;
+    color: white;
+    font-size: small;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    padding-right: 17.5%;
+  }
+
+  .logBarImage {
+    height: 0.8rem;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .logBarItem {
+    padding-left: 2rem;
+    cursor: pointer;
   }
 
   nav {
