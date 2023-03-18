@@ -264,6 +264,7 @@ footer {
   padding: 1rem;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
 footer div {
@@ -271,7 +272,10 @@ footer div {
 }
 
 .ccFooter {
-  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
   height: auto;
   padding-right: 0.5rem;
 }
@@ -446,12 +450,22 @@ footer div {
     margin: 0.1rem 2rem 0.5rem 2rem;
   }
 
+  footer {
+    background-color: #414246;
+  }
+
+  .ccFooter {
+    color: white;
+  }
+
   .ccText {
     font-size: 1.3rem;
+    color: white;
   }
 
   .rightsCourse {
     font-size: 0.85rem;
     padding-left: 5rem;
+    color: white;
   }
 }

@@ -151,7 +151,7 @@ If you like this project or have any advise just send me a message and I will be
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my coding partners! the have been a great support!
+I would like to thank my coding partners! the have been a great support! Also, I would like to thanks Cindy Shin for the web design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
