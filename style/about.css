@@ -1,0 +1,471 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.logBar {
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+nav {
+  display: none;
+}
+
+#topMenu {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+
+.logoAbout {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  height: 3.5rem;
+  width: 85%;
+}
+
+.logoHeader {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.5rem;
+}
+
+#menu {
+  width: 95%;
+  position: absolute;
+  list-style: none;
+  top: 5rem;
+  display: none;
+  background-image: linear-gradient(to bottom right, #414246, black);
+  background-color: #414246;
+  color: white;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+}
+
+#closeMenuBtn {
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  margin-right: 1.5rem;
+}
+
+#menuButton {
+  height: 31px;
+  width: 27px;
+  padding: 0.2rem;
+}
+
+.menuItems {
+  text-align: center;
+  padding: 1rem;
+}
+
+.menuItems a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#home {
+  background-image: url(../assets/about/aboutMobileBack1.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: auto;
+  transform: translateY(5rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ff4f38;
+}
+
+.introTitle {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url('../assets/h1Back.jpg');
+}
+
+#home img {
+  display: none;
+}
+
+h1 {
+  font-size: 2.2rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url('../assets/h1Back.jpg');
+  font-weight: 900;
+}
+
+.eventBrief {
+  color: #2c2c2c;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: white;
+}
+
+.contactInfo {
+  padding: 2rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.eventContact {
+  color: #7a7a7a;
+  padding-top: 1rem;
+}
+
+.contactMail {
+  color: #5f5f5f;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(5rem);
+  background-color: #fff;
+}
+
+.logoSection h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #3b3e45;
+  padding-bottom: 1rem;
+}
+
+.logoSection p {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  color: #838383;
+}
+
+.aboutLogoContainer {
+  width: 100%;
+  height: auto;
+  border-top: solid 0.05rem #e0e2e7;
+  border-bottom: solid 0.05rem #e0e2e7;
+  margin-bottom: 1rem;
+}
+
+.aboutLogo {
+  width: 75%;
+  height: auto;
+  padding: 1.5rem;
+}
+
+.pastEvents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(5rem);
+  background-color: #fff;
+  border-top: solid 0.05rem #e0e2e7;
+  padding-top: 2rem;
+}
+
+.pastEvents h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #3b3e45;
+  padding-bottom: 1rem;
+}
+
+.imageOverlay {
+  margin: 1rem;
+  width: 20.87rem;
+  height: 11.45rem;
+  background-image: url('../assets/about/pastEvent.jpeg');
+  background-size: 20.87rem 11.45rem;
+}
+
+.imageOverlay2 {
+  margin: 1rem;
+  width: 20.87rem;
+  height: 11.45rem;
+  background-image: url('../assets/about/pastEvent2.jpg');
+  background-size: 20.87rem 11.45rem;
+}
+
+.pastEventImage {
+  display: flex;
+  padding: 0.5rem;
+  width: 20.87rem;
+  height: 11.45rem;
+  background-color: rgba(239, 11, 11, 0.6);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(5rem);
+  background-color: #414246;
+}
+
+.partner h2 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.partnerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.partnerLogo {
+  width: 5rem;
+  height: auto;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+footer {
+  display: flex;
+  transform: translateY(5rem);
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+footer div {
+  display: flex;
+}
+
+.ccFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: auto;
+  padding-right: 0.5rem;
+}
+
+.ccText {
+  font-size: 1rem;
+}
+
+.rightsCourse {
+  font-size: 0.75rem;
+  padding-left: 1rem;
+}
+
+/* Minimum desktop screen size should be 768px. this will be changed in the next summits when i make the deskopt. */
+@media screen and (min-width: 768px) {
+  #menuButton {
+    display: none;
+  }
+
+  #blurSection {
+    filter: none !important;
+  }
+
+  #menu {
+    display: none !important;
+  }
+
+  .logBar {
+    display: flex;
+    background-color: #3e3e3e;
+    color: white;
+    font-size: small;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+    padding-right: 17.5%;
+  }
+
+  .logBarImage {
+    height: 0.8rem;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .logBarItem {
+    padding-left: 2rem;
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navItems {
+    text-decoration: none;
+    padding: 1rem;
+    margin-left: 1rem;
+    color: #716a6a;
+    font-weight: bold;
+  }
+
+  .navItems:hover {
+    background-color: #ff4f38;
+    color: white;
+  }
+
+  .navAbout {
+    color: #ff4f38;
+  }
+
+  .campaign {
+    border: solid 0.3rem red;
+    padding: 0.5rem;
+    margin-left: 3rem;
+  }
+
+  .logoHeader {
+    width: 40%;
+  }
+
+  #home {
+    background-image: url(../assets/about/Hero.svg);
+  }
+
+  .introTitle {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3.9rem;
+    margin: auto;
+    padding-top: 3.5rem;
+    padding-bottom: 0.3rem;
+    width: 62%;
+    font-weight: 900;
+  }
+
+  #home img {
+    display: block;
+    margin: 1rem;
+  }
+
+  .eventBrief {
+    width: 62%;
+    margin: auto;
+    font-size: 1rem;
+    padding: 2rem;
+  }
+
+  .divSeparator {
+    margin-top: 1rem;
+  }
+
+  .titleDesktopSeparator {
+    width: 5%;
+    margin: auto;
+  }
+
+  .contactMail {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .logoSection h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .aboutLogo {
+    width: 20%;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .pastEvents h2 {
+    font-size: 1.5rem;
+  }
+
+  .eventContact {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .pastEventImgContainer {
+    display: flex;
+    margin: 1.5rem;
+  }
+
+  .imageOverlay,
+  .imageOverlay2 {
+    width: 27.87rem;
+    height: 14.75rem;
+    background-size: 27.87rem 14.75rem;
+  }
+
+  .pastEventImage {
+    padding: 0.5rem;
+    width: 27.87rem;
+    height: 14.75rem;
+    font-size: 2rem;
+  }
+
+  .pastEventImage:hover {
+    transform: scale(1.2);
+    background-color: rgba(239, 11, 11, 0.01);
+  }
+
+  .partnerLogo {
+    width: 7rem;
+    height: auto;
+    margin: 0.1rem 2rem 0.5rem 2rem;
+  }
+
+  footer {
+    background-color: #414246;
+  }
+
+  .ccFooter {
+    color: white;
+  }
+
+  .ccText {
+    font-size: 1.3rem;
+    color: white;
+  }
+
+  .rightsCourse {
+    font-size: 0.85rem;
+    padding-left: 5rem;
+    color: white;
+  }
+}

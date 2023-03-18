@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style/style.css"/>
-    <title>Capstone Project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="style/style.css"/>
+  <title>Firemen Meeting 2023</title>
 </head>
 <body>
-    <h1 id="test">Buenas tardes</h1>
-    <script src="script.js"></script>
+
+  <header>
+    <ul class="logBar">
+      <il class="logBarItem"><img class="logBarImage" src="assets/about/facebook.svg" alt="Facebook logo"></il>
+      <il class="logBarItem"><img class="logBarImage" src="assets/about/twitter.svg" alt="Twitter logo"></il>
+      <il class="logBarItem">English</il>
+      <il class="logBarItem">My Page</il>
+      <il class="logBarItem">Logout</il>
+    </ul>
+    <div id="topMenu">
+      <img id="menuButton" src="assets/hambMenu.png" alt="Menu hamburguer">
+      <a class="logoHeader" href="./index.html"><img id="logo" src="assets/logo.svg" alt="school logo"></a>
+      <nav>
+        <a class="navItems navAbout" href="./about.html">About</a></li>
+        <a class="navItems" href="#mainProgram">Program</a></li>
+        <a class="navItems" href="#join">Join</a></li>
+        <a class="navItems" href="#partner">Sponsor</a></li>
+        <a class="navItems" href="#news">News</a></li>
+        <a class="navItems campaign" href="#CC campaign">CC campaign</a></li>
+      </nav>
+      <ul id="menu">
+        <li id="closeMenuBtn"><a class="closebtn close_menu">&times;</a></li>
+        <li class="menuItems"><a href="./about.html">About</a></li>
+        <li class="menuItems"><a href="#program">Program</a></li>
+        <li class="menuItems"><a href="#join">Join</a></li>
+        <li class="menuItems"><a href="#sponsor">Sponsor</a></li>
+        <li class="menuItems"><a href="#news">News</a></li>
+        <li class="menuItems"><a href="#CC campaign">#CC campaign</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="blurSection">
+  
+    <section id="home">
+      <p class="introTitle">"Hello! Firefighters!"</p>
+      <h1>FIREMEN MEETING<br>GLOBAL SUMMIT<br>2023</h1>
+      <p class="brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi finibus dui in eros fringilla rhoncus. Proin tempor id libero eleifend gravida.</p>
+      <p class="date">2023.10.25(WED) ~ 26(THU)</p>
+      <p class="place">@ Jaracanda Club, Quito.</p>
+    </section>
+
+    <section id="mainProgram">
+      <h3>Main Program</h3>
+      <hr>
+      <div id="programContainer"></div>
+      <div class="joinBtnHolder"><p class="join">Join FM Global Summit 2023</p></div>
+    </section><section id="aboutMe"></section>
+
+    <section id="speakers">
+      <h3>Featured Speakers</h3>
+      <hr class="speakersLine">
+      <div id="speakersContainer"></div>
+      <div id="moreSpeakersContainer"></div>
+      <div class="moreContainer">
+        <button class="moreSpeakerBtn" type="button">MORE <img src="assets/arrowMore.svg" alt="arrow" class="moreBtnArrow"></button>
+      </div>
+    </section>
+
+    <section id="partner">
+      <h2 class="sectionTitle">Partner</h2>
+      <img src="assets/about/logoSectionLine.svg" alt="line" alt="line">
+      <div class="partnerContainer">
+        <img class="partnerLogo" src="assets/about/partner1.png" alt="Partner logo">
+        <img class="partnerLogo" src="assets/about/partner2.png" alt="Partner logo">
+        <img class="partnerLogo" src="assets/about/partner3.png" alt="Partner logo">
+        <img class="partnerLogo" src="assets/about/partner4.svg" alt="Partner logo">
+        <img class="partnerLogo" src="assets/about/partner5.svg" alt="Partner logo">
+      </div>
+    </section>
+
+  </section>
+
+  <footer>
+    <div>
+      <img src="assets/about/ccFooter.svg" alt="Copy Rights">
+      <p class="ccText">Firemen Meeting<br>Ecuador</p>
+    </div>
+    <p class="rightsCourse">2023 Fireman Meeting, Ecuador. Our website stores cookies on your device and information in accordance with our Statement.<br>Some Rights Reserved</p>
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
